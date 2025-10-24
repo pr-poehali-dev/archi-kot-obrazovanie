@@ -47,7 +47,7 @@ const ModuleDetail = () => {
   const loadTasks = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`/api/tasks?module_id=${moduleId}&student_id=${currentUser.id}`);
+      const response = await fetch(`https://functions.poehali.dev/5590c9b7-1315-42b7-9395-736bd8c4282b?module_id=${moduleId}&student_id=${currentUser.id}`);
       const data = await response.json();
       setTasks(data.tasks || []);
     } catch (error) {
@@ -68,7 +68,7 @@ const ModuleDetail = () => {
     if (!answer.trim() || !selectedTask) return;
 
     try {
-      const response = await fetch('/api/tasks/submit', {
+      const response = await fetch('https://functions.poehali.dev/5590c9b7-1315-42b7-9395-736bd8c4282b?action=submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

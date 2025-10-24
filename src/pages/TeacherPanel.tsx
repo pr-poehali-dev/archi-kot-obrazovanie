@@ -49,7 +49,7 @@ const TeacherPanel = () => {
 
   const loadTasks = async () => {
     try {
-      const response = await fetch(`/api/tasks/teacher?teacher_id=${currentTeacher.id}`);
+      const response = await fetch(`https://functions.poehali.dev/5590c9b7-1315-42b7-9395-736bd8c4282b?teacher_id=${currentTeacher.id}`);
       const data = await response.json();
       setTasks(data.tasks || []);
     } catch (error) {
@@ -71,7 +71,7 @@ const TeacherPanel = () => {
     }
 
     try {
-      const response = await fetch('/api/tasks/create', {
+      const response = await fetch('https://functions.poehali.dev/5590c9b7-1315-42b7-9395-736bd8c4282b?action=create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

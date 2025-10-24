@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Get module tasks for student",
+      "method": "GET",
+      "path": "/?module_id=1&student_id=1",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "tasks": "array"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get teacher tasks",
+      "method": "GET",
+      "path": "/?teacher_id=1",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "tasks": "array"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Create new task",
+      "method": "POST",
+      "path": "/?action=create",
+      "body": {
+        "module_id": 1,
+        "teacher_id": 1,
+        "title": "Test Task",
+        "description": "Test description",
+        "task_type": "text",
+        "correct_answer": "42",
+        "points": 10
+      },
+      "expectedStatus": 201,
+      "expectedBody": {
+        "task_id": "number",
+        "message": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
