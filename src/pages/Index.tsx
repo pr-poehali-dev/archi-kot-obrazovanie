@@ -40,9 +40,9 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
-              src="https://cdn.poehali.dev/projects/b25b5c2e-c7a9-4a02-b94c-82bfaa54eed5/files/fa6a6bbf-f4e4-4826-9a64-dd73b365059f.jpg" 
+              src="https://cdn.poehali.dev/projects/b25b5c2e-c7a9-4a02-b94c-82bfaa54eed5/files/43c5666c-3038-4a9b-a3be-3c5a8d2b56eb.jpg" 
               alt="Котик Арчи" 
-              className="w-16 h-16 rounded-full animate-bounce-gentle"
+              className="w-16 h-16 rounded-full object-cover animate-bounce-gentle"
             />
             <div>
               <h1 className="text-2xl md:text-3xl text-foreground">Приключения с Арчи</h1>
@@ -66,9 +66,9 @@ const Index = () => {
           <Card className="p-8 bg-gradient-to-r from-primary/20 to-secondary/20 border-none shadow-lg">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <img 
-                src="https://cdn.poehali.dev/projects/b25b5c2e-c7a9-4a02-b94c-82bfaa54eed5/files/fa6a6bbf-f4e4-4826-9a64-dd73b365059f.jpg" 
+                src="https://cdn.poehali.dev/projects/b25b5c2e-c7a9-4a02-b94c-82bfaa54eed5/files/43c5666c-3038-4a9b-a3be-3c5a8d2b56eb.jpg" 
                 alt="Арчи приветствует" 
-                className="w-32 h-32 rounded-full animate-float shadow-xl"
+                className="w-32 h-32 rounded-full object-cover animate-float shadow-xl"
               />
               <div className="flex-1 text-center md:text-left">
                 <h2 className="text-3xl md:text-4xl mb-3 text-foreground">Привет! Я Арчи! 🐱</h2>
@@ -189,9 +189,9 @@ const Index = () => {
                 </div>
               </div>
               <img 
-                src="https://cdn.poehali.dev/projects/b25b5c2e-c7a9-4a02-b94c-82bfaa54eed5/files/fa6a6bbf-f4e4-4826-9a64-dd73b365059f.jpg" 
+                src="https://cdn.poehali.dev/projects/b25b5c2e-c7a9-4a02-b94c-82bfaa54eed5/files/43c5666c-3038-4a9b-a3be-3c5a8d2b56eb.jpg" 
                 alt="Арчи мотивирует" 
-                className="w-48 h-48 rounded-full animate-float shadow-2xl"
+                className="w-48 h-48 rounded-full object-cover animate-float shadow-2xl"
               />
             </div>
           </Card>
